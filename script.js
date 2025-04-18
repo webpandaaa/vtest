@@ -1,38 +1,43 @@
 const testimonials = [
     {
-      quote: "Finished products have been met with positive feedback from third-party users, thanks in part to VTEST’s robust assurance methods. Their thorough testing process, detailed reports, and attentive customer service continue to boost product quality.",
-      name: "Technology Firm, Canada",
-      position: "Co-Founder",
+      quote: "VTEST knows what it means to deliver quality software testing services. Their team worked to understand our specific Australian market needs and delivered exceptional results. They communicated effectively and became a true extension of our development team.",
+      name: "FinTech Company, Sydney",
+      position: "Technology Director",
     },
     {
-      quote: "VTEST’s involvement leads to lower bugs in each release and overall higher quality, acting as a partner in initial processes and conversations. Communication is easy and prompt, and they constantly work to improve. They also provide valuable documentation and feedback after each release.",
-      name: "Flights App, USA",
+      quote: "The VTEST team's attention to detail helped us identify critical bugs before our major product launch. Their understanding of the Australian financial regulatory requirements was invaluable.",
+      name: "Banking Software Provider, Melbourne",
       position: "CTO",
     },
     {
-      quote: "We've evolved as a team. The testing has helped the development get better by identifying critical issues early, streamlining our release cycles, and boosting overall product stability and team confidence.",
-      name: "Travel App, USA",
-      position: "Founder",
+      quote: "We've been working with VTEST for over two years, and they consistently deliver high-quality testing services. Their flexible engagement model works perfectly for our agile development cycles.",
+      name: "E-commerce Platform, Brisbane",
+      position: "Head of Development",
     },
     {
-      quote: "VTEST is a competent group, and I have never had an issue with them. Their consistency, responsiveness, and attention to detail have made them a reliable quality assurance partner throughout our product lifecycle.",
-      name: "Mobile Apps Development Firm, Canada",
-      position: "CTO",
+      quote: "VTEST's mobile app testing service ensured our application performed flawlessly across all devices popular in the Australian market. Their detailed reports helped us prioritize fixes efficiently.",
+      name: "Mobile App Developer, Perth",
+      position: "Product Manager",
     },
     {
-      quote: "I liked that, even without me asking, they [VTEST] were able to come up with the whole test scenarios, the test cases, and so on. It showed initiative, deep understanding of the product, and a commitment to delivering thorough quality coverage.",
-      name: "Staffing Firm, USA",
-      position: "CO-Founder",
+      quote: "As a healthcare software provider, we need meticulous testing that complies with strict Australian privacy standards. VTEST delivered beyond our expectations and helped us achieve compliance with confidence.",
+      name: "Healthcare Software Company, Adelaide",
+      position: "Compliance Officer",
     },    
     {
-      quote: "VTEST testers worked without an intermediary manager per the client's request. He was impressed by their ability to identify and execute testing scenarios. Their focus on objectives improved over the course of the engagement.",
-      name: "HRMS Firm, USA",
-      position: "CTO",
+      quote: "The on-demand testing team from VTEST saved our product launch. They quickly mobilized resources to address our testing backlog and delivered comprehensive results within our tight deadline.",
+      name: "SaaS Company, Gold Coast",
+      position: "Project Manager",
     },
     {
-      quote: "VTEST’s involvement leads to lower bugs in each release and overall higher quality, acting as a partner in initial processes and conversations. Communication is easy and prompt, and they constantly work to improve. They also provide valuable documentation and feedback after each release.",
-      name: "AI Application, USA",
-      position: "Founder",
+      quote: "VTEST's performance testing identified critical bottlenecks that would have affected our Australian users during peak times. Their recommendations helped us optimize our infrastructure before launch",
+      name: "Online Marketplace, Sydney",
+      position: "IT Director",
+    },
+    {
+      quote: "We appreciate VTEST's transparent communication and reporting. Their AI-driven analytics provided insights that helped us make informed decisions about our quality assurance strategy.",
+      name: "Insurance Technology Provider, Melbourne",
+      position: "COO",
     },
     
   ];
@@ -48,7 +53,7 @@ const testimonials = [
       <p>${testimonial.position}</p>
     `;
 
-    const dots = document.getElementById('dots-container').children;
+    const dots = document.getElementById('four-dots-container').children;
     for (let i = 0; i < dots.length; i++) {
       dots[i].classList.toggle('active', i === index);
     }
@@ -65,10 +70,10 @@ const testimonials = [
   }
 
   function createDots() {
-    const dotsContainer = document.getElementById('dots-container');
+    const dotsContainer = document.getElementById('four-dots-container');
     testimonials.forEach((_, i) => {
       const dot = document.createElement('div');
-      dot.classList.add('dot');
+      dot.classList.add('four-dot');
       dot.addEventListener('click', () => {
         currentIndex = i;
         renderTestimonial(currentIndex);
