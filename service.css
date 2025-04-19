@@ -468,15 +468,17 @@ section {
 }
 
 .industry-tag {
-  background-color: var(--light-gray);
+  background-color: #aaaaaa76;
   padding: 0.5rem 1rem;
   border-radius: 50px;
   font-size: 0.9rem;
-  color: var(--white);
+  color: #fff;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .industry-tag:hover {
-  background-color: var(--orange);
+  background-color: #e5590d;
 }
 
 .cta-section {
