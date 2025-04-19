@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Avenir";
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url(./AvenirLTStd-Book.otf);
+}
+
+#navbar {
+  width: 100%;
+  position: absolute;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 100px;
+  z-index: 99;
+}
+
+#navbar #logo img {
+  width: 140px;
+  object-fit: cover;
+}
+
+#navbar #links {
+  display: flex;
+  gap: 40px;
+}
+
+#navbar #links a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  padding-bottom: 5px;
+  transition: all 0.3s ease;
+}
+
+#navbar #links a:hover {
+  border-bottom: 1px solid #e5590d;
+  color: #e5590d;
+}
+
+.vtest-footer{
+    font-family: "Avenir";
+}
+
+image img {
+  max-height: 350px;
+}
+
+
+#four {
+    width: 100%;
+    background: #000;
+    color: #fff;
+    font-family: "Avenir";
+  }
+  
+  #stories {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .testimonial-container {
+    width: 100%;
+    text-align: start;
+  }
+  
+  .testimonial-content {
+    min-height: 250px;
+  }
+  
+  #testimonial-content h1 {
+    font-size: 20px;
+    color: #fff;
+    margin: 20px 0;
+  }
+  
+  #testimonial-content p {
+    font-size: 20px;
+    color: #999999;
+  }
+  
+  .testimonial-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .testimonial-nav button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .four-dots {
+    display: flex;
+    gap: 8px;
+    margin: 0 10px;
+  }
+  
+  .four-dot {
+    width: 10px;
+    height: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  .four-dot.active {
+    background: #f26522;
+    border-color: #f26522;
+  }
+
+  
+.success-content p::before {
+    display: none;
+}
+
+
+/* for text */
+.para {
+    font-weight: 300;
+    font-size: var(--font-size-small);
+    line-height: 140%;
+    color: var(--white);
+    font-family: "Avenir";
+}
+  
+#footer{
+  width: 100%;
+  height: 55vh;
+  font-family: "Avenir";
+}
+
+#upper{
+  background-color: #111111;
+  width: 100%;
+  height: 80%;
+  padding: 40px 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#upper #img{
+  width: 20%;
+}
+
+#upper #img img{
+  width: 60%;
+}
+#upper #about{
+  width: 30%;
+}
+
+#upper h3{
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+#upper #about li{
+  list-style: none;
+  color: #999999;
+  margin: 10px 0;
+}
+
+#upper #office{
+  width: 30%;
+}
+
+#upper #office p{
+  color: #999999;
+  margin: 10px 0;
+}
+
+#upper #office #social{
+  margin-top: 50px;
+}
+
+#upper #office #social #social-icons{
+  display: flex;
+  gap: 40px;
+}
+
+#upper #office #social #social-icons a{
+  text-decoration: none;
+  color: #999999;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+#footer #bottom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+}
+
+#footer #bottom p{
+  color: #999999;
+  font-size: 15px;
+}
+
+.serviceTitle p {
+  margin-top: 12px;
+  line-height: 140%;
+  opacity: 0.8;
+  font-size: 20px !important;
+  font-family: "Avenir";
+}
+
+.font-light {
+  font-family: "Avenir";
+  line-height: 140% !important;
+}
+
+.br-16 {
+  border-radius: 16px;
+  display: none;
+}
+
+.addresses {
+  /* justify-content: space-around; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.locationRow {
+  display: flex;
+  border-radius: 16px;
+  border: 1px solid #111111;
+  margin-top: 50px;
+  padding: 40px 100px;
+}
