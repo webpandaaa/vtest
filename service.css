@@ -661,6 +661,10 @@ section {
       transform: translateY(0px);
     }
   }
+
+  .service-icon i{
+    color: #e5590d;
+  }
   
   
   
