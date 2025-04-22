@@ -12,18 +12,26 @@
   </head>
   <body>
     <div id="main">
-        <div id="navbar">
-            <div id="logo">
-              <a href="index.html"><img
-                src="https://vtestcorp.com/wp-content/themes/VTESTP6/assets/images/vtest-logo.png"
-                alt="Logo"
-              /></a>
-            </div>
-            <div id="links">
-              <a href="service.html">Services</a>
-              <a href="contact.html">Contact Us</a>
-            </div>
-          </div>
+      <div id="navbar">
+        <div id="logo">
+          <a href="index.html">
+            <img src="https://vtestcorp.com/wp-content/themes/VTESTP6/assets/images/vtest-logo.png" alt="Logo" />
+          </a>
+        </div>
+        <div id="links">
+          <a href="service.html">Services</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <!-- Hamburger Icon for Mobile -->
+        <div id="menu-button" onclick="toggleMenu()">☰</div>
+      </div>
+      
+      <!-- Slide-in Menu -->
+      <div id="mobile-menu">
+        <span onclick="toggleMenu()" class="close-btn">✖</span>
+        <a href="service.html">Services</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
 
       <div  id="hero">
         <div id="hero-text">
@@ -42,7 +50,7 @@
         <div class="container">
             <h1 class="srv">Our Services</h1>
           <div class="hero-content">
-            <div class="service-tabs">
+            <div class="serv-tabs">
 
               <div class="tab active" data-tab="consultation">
                 Testing Consultation
@@ -51,9 +59,9 @@
               <div class="tab" data-tab="staff">Staff Augmentation</div>
             </div>
 
-            <div class="service-description active" id="consultation">
-              <h3 class="service-title">Testing Consultation</h3>
-              <div class="service-content">
+            <div class="serv-description active" id="consultation">
+              <h3 class="serv-title">Testing Consultation</h3>
+              <div class="serv-content">
                 <p>
                   Our expert consultants analyze your testing requirements and
                   provide tailored solutions for your Australian business. We
@@ -62,20 +70,50 @@
                   Australian industry standards and regulations.
                 </p>
 
-                <h4>Benefits for Australian Businesses:</h4>
-                <ul class="benefits-list">
-                  <li>Expert analysis of existing testing processes</li>
-                  <li>Customized testing strategy development</li>
-                  <li>Tool selection guidance</li>
-                  <li>Process improvement recommendations</li>
-                  <li>Australian regulatory compliance insights</li>
-                </ul>
+                <div class="service-card">
+                  <div class="service-icon">
+                    <i class="fas fa-tasks"></i>
+                  </div>
+                  <h3 class="service-title">Benefits for Australian Businesses :</h3>
+                  <div class="service-features">
+                    <div class="feature-item">
+                      <span class="feature-icon"
+                        ><i class="fas fa-check-circle"></i
+                      ></span>
+                      <span>Expert analysis of existing testing processes</span>
+                    </div>
+                    <div class="feature-item">
+                      <span class="feature-icon"
+                        ><i class="fas fa-check-circle"></i
+                      ></span>
+                      <span>Customized testing strategy development</span>
+                    </div>
+                    <div class="feature-item">
+                      <span class="feature-icon"
+                        ><i class="fas fa-check-circle"></i
+                      ></span>
+                      <span>Tool selection guidance</span>
+                    </div>
+                    <div class="feature-item">
+                      <span class="feature-icon"
+                        ><i class="fas fa-check-circle"></i
+                      ></span>
+                      <span>Process improvement recommendations</span>
+                    </div>
+                    <div class="feature-item">
+                      <span class="feature-icon"
+                        ><i class="fas fa-check-circle"></i
+                      ></span>
+                      <span>Australian regulatory compliance insights</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div class="service-description" id="managed">
-              <h3 class="service-title">Managed Testing Services</h3>
-              <div class="service-content">
+            <div class="serv-description" id="managed">
+              <h3 class="serv-title">Managed Testing Services</h3>
+              <div class="serv-content">
                 <p>
                   Our comprehensive managed testing services provide Australian
                   businesses with end-to-end quality assurance. From test
@@ -84,17 +122,53 @@
                   understand the Australian market.
                 </p>
 
-                <h4>Our Managed Testing Approach:</h4>
-                <ul class="benefits-list">
-                  <li>Requirements analysis and test planning</li>
-                  <li>Test case design and development</li>
-                  <li>Manual and automated test execution</li>
-                  <li>Defect tracking and management</li>
-                  <li>Comprehensive reporting and analytics</li>
-                  <li>Continuous improvement recommendations</li>
-                </ul>
+                <div class="service-card">
+                  <div class="service-icon">
+                    <i class="fas fa-tasks"></i>
+                  </div>
+                  <h3 class="service-title">Our Managed Testing Approach :</h3>
+                  <div class="service-features">
+                    <div class="feature-item">
+                      <span class="feature-icon"
+                        ><i class="fas fa-check-circle"></i
+                      ></span>
+                      <span>Requirements analysis and test planning</span>
+                    </div>
+                    <div class="feature-item">
+                      <span class="feature-icon"
+                        ><i class="fas fa-check-circle"></i
+                      ></span>
+                      <span>Test case design and development</span>
+                    </div>
+                    <div class="feature-item">
+                      <span class="feature-icon"
+                        ><i class="fas fa-check-circle"></i
+                      ></span>
+                      <span>Manual and automated test execution</span>
+                    </div>
+                    <div class="feature-item">
+                      <span class="feature-icon"
+                        ><i class="fas fa-check-circle"></i
+                      ></span>
+                      <span>Defect tracking and management</span>
+                    </div>
+                    <div class="feature-item">
+                      <span class="feature-icon"
+                        ><i class="fas fa-check-circle"></i
+                      ></span>
+                      <span>Comprehensive reporting and analytics</span>
+                    </div>
+                    <div class="feature-item">
+                      <span class="feature-icon"
+                        ><i class="fas fa-check-circle"></i
+                      ></span>
+                      <span>Continuous improvement recommendations</span>
+                    </div>
+                  </div>
+                </div>
 
-                <h4>Industries We Serve in Australia:</h4>
+
+                <h4>Industries We Serve in Australia :</h4>
                 <div class="industries">
                   <span class="industry-tag">Financial Services</span>
                   <span class="industry-tag">Healthcare</span>
@@ -103,37 +177,106 @@
                   <span class="industry-tag">Telecommunications</span>
                   <span class="industry-tag">Manufacturing</span>
                 </div>
+
+
               </div>
             </div>
 
-            <div class="service-description" id="staff">
-              <h3 class="service-title">Staff Augmentation</h3>
-              <div class="service-content">
+            <div class="serv-description" id="staff">
+              <h3 class="serv-title">Staff Augmentation</h3>
+              <div class="serv-content">
                 <p>
                   Supplement your in-house team with our skilled testing
                   professionals. Our staff augmentation services provide
                   Australian businesses with flexible access to specialized
                   testing expertise when you need it most.
                 </p>
+                 
+                <div class="services-grid">
+                  <div class="service-card">
+                  <div class="service-icon">
+                    <i class="fas fa-tasks"></i>
+                  </div>
+                  <h3 class="service-title">Our Augmentation Options :</h3>
+                  <div class="service-features">
+                    <div class="feature-item">
+                      <span class="feature-icon"
+                        ><i class="fas fa-check-circle"></i
+                      ></span>
+                      <span>Short-term project support</span>
+                    </div>
+                    <div class="feature-item">
+                      <span class="feature-icon"
+                        ><i class="fas fa-check-circle"></i
+                      ></span>
+                      <span>Long-term testing partnerships</span>
+                    </div>
+                    <div class="feature-item">
+                      <span class="feature-icon"
+                        ><i class="fas fa-check-circle"></i
+                      ></span>
+                      <span>Specialized skills on demand</span>
+                    </div>
+                    <div class="feature-item">
+                      <span class="feature-icon"
+                        ><i class="fas fa-check-circle"></i
+                      ></span>
+                      <span>Scalable teams based on project requirements</span>
+                    </div>
+                    <div class="feature-item">
+                      <span class="feature-icon"
+                        ><i class="fas fa-check-circle"></i
+                      ></span>
+                      <span>Local Australian-based testers available</span>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="service-card">
+                  <div class="service-icon">
+                    <i class="fas fa-tasks"></i>
+                  </div>
+                  <h3 class="service-title">Testing Specialists Available :</h3>
+                  <div class="service-features">
+                    <div class="feature-item">
+                      <span class="feature-icon"
+                        ><i class="fas fa-check-circle"></i
+                      ></span>
+                      <span>Test Automation Engineers</span>
+                    </div>
+                    <div class="feature-item">
+                      <span class="feature-icon"
+                        ><i class="fas fa-check-circle"></i
+                      ></span>
+                      <span>Performance Testing Experts</span>
+                    </div>
+                    <div class="feature-item">
+                      <span class="feature-icon"
+                        ><i class="fas fa-check-circle"></i
+                      ></span>
+                      <span>Security Testing Specialists</span>
+                    </div>
+                    <div class="feature-item">
+                      <span class="feature-icon"
+                        ><i class="fas fa-check-circle"></i
+                      ></span>
+                      <span>Mobile App Testers</span>
+                    </div>
+                    <div class="feature-item">
+                      <span class="feature-icon"
+                        ><i class="fas fa-check-circle"></i
+                      ></span>
+                      <span>Accessibility Testing Professionals</span>
+                    </div>
+                    <div class="feature-item">
+                      <span class="feature-icon"
+                        ><i class="fas fa-check-circle"></i
+                      ></span>
+                      <span>DevOps Testing Engineers</span>
+                    </div>
+                  </div>
+                  </div>
+                </div>
 
-                <h4>Our Augmentation Options:</h4>
-                <ul class="benefits-list">
-                  <li>Short-term project support</li>
-                  <li>Long-term testing partnerships</li>
-                  <li>Specialized skills on demand</li>
-                  <li>Scalable teams based on project requirements</li>
-                  <li>Local Australian-based testers available</li>
-                </ul>
-
-                <h4>Testing Specialists Available:</h4>
-                <ul class="benefits-list">
-                  <li>Test Automation Engineers</li>
-                  <li>Performance Testing Experts</li>
-                  <li>Security Testing Specialists</li>
-                  <li>Mobile App Testers</li>
-                  <li>Accessibility Testing Professionals</li>
-                  <li>DevOps Testing Engineers</li>
-                </ul>
               </div>
             </div>
           </div>
@@ -177,14 +320,10 @@
       <section class="expertise-section" id="expertise">
         <div class="container">
           <h2 class="section-title">VTEST QA Testing Expertise in Australia</h2>
-          <p>
-            Covering all key quality assurance testing services under one roof
-            for Australian businesses.
-          </p>
 
           <div class="services-grid">
-            <div class="service-card">
-              <div class="service-icon"><i class="fas fa-cogs"></i> </i> </div>
+            <div class="servic-card">
+              <div class="servic-icon"><i class="fas fa-cogs"></i> </i> </div>
               <h3>Advisory & Transformation</h3>
               <p>
                 Optimize testing strategies to enhance efficiency, reduce risk,
@@ -192,8 +331,8 @@
                 to evolving market demands.
               </p>
             </div>
-            <div class="service-card">
-              <div class="service-icon"><i class="fas fa-rocket"></i></div>
+            <div class="servic-card">
+              <div class="servic-icon"><i class="fas fa-rocket"></i></div>
               <h3>Next-Gen Testing</h3>
               <p>
                 Stay ahead with AI, IoT, and blockchain testing for secure and
@@ -201,8 +340,8 @@
                 technology sector.
               </p>
             </div>
-            <div class="service-card">
-              <div class="service-icon"><i class="fas fa-robot"></i></div>
+            <div class="servic-card">
+              <div class="servic-icon"><i class="fas fa-robot"></i></div>
               <h3>AI-Powered QA</h3>
               <p>
                 Improve software quality with AI-driven test data management for
@@ -210,8 +349,8 @@
                 maintain competitive advantage.
               </p>
             </div>
-            <div class="service-card">
-              <div class="service-icon"><i class="fas fa-laptop"></i></div>
+            <div class="servic-card">
+              <div class="servic-icon"><i class="fas fa-laptop"></i></div>
               <h3>Digital Assurance</h3>
               <p>
                 Flawless customer experiences with robust testing for mobile,
@@ -219,8 +358,8 @@
                 digital ecosystem.
               </p>
             </div>
-            <div class="service-card">
-              <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+            <div class="servic-card">
+              <div class="servic-icon"><i class="fas fa-mobile-alt"></i></div>
               <h3>Devices Testing</h3>
               <p>
                 Ensure compatibility and usability in medical and smart devices
@@ -228,8 +367,8 @@
                 regulatory standards.
               </p>
             </div>
-            <div class="service-card">
-              <div class="service-icon"><i class="fas fa-bolt"></i></div>
+            <div class="servic-card">
+              <div class="servic-icon"><i class="fas fa-bolt"></i></div>
               <h3>Comprehensive Test Automation</h3>
               <p>
                 End-to-end quality delivery with automation, functional,
@@ -366,8 +505,8 @@
           </h2>
 
           <div class="services-grid">
-            <div class="service-card">
-              <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+            <div class="servic-card">
+              <div class="servic-icon"><i class="fas fa-mobile-alt"></i></div>
               <h3>Mobile App Testing</h3>
               <p>
                 Comprehensive testing for iOS and Android applications across
@@ -376,8 +515,8 @@
                 network conditions.
               </p>
             </div>
-            <div class="service-card">
-              <div class="service-icon"><i class="fas fa-bolt"></i></div>
+            <div class="servic-card">
+              <div class="servic-icon"><i class="fas fa-bolt"></i></div>
               <h3>Performance Testing</h3>
               <p>
                 Assess your application's responsiveness, stability, and
@@ -386,8 +525,8 @@
                 optimization recommendations.
               </p>
             </div>
-            <div class="service-card">
-              <div class="service-icon"><i class="fas fa-lock"></i></div>
+            <div class="servic-card">
+              <div class="servic-icon"><i class="fas fa-lock"></i></div>
               <h3>Security Testing</h3>
               <p>
                 Protect your applications and data with comprehensive security
@@ -395,8 +534,8 @@
                 industry standards.
               </p>
             </div>
-            <div class="service-card">
-              <div class="service-icon"><i class="fas fa-robot"></i> </div>
+            <div class="servic-card">
+              <div class="servic-icon"><i class="fas fa-robot"></i> </div>
               <h3>Automation Testing</h3>
               <p>
                 Accelerate your testing cycles with our robust automation
@@ -405,8 +544,8 @@
                 with your applications.
               </p>
             </div>
-            <div class="service-card">
-              <div class="service-icon"><i class="fas fa-wheelchair"></i></div>
+            <div class="servic-card">
+              <div class="servic-icon"><i class="fas fa-wheelchair"></i></div>
               <h3>Accessibility Testing</h3>
               <p>
                 Ensure your digital products comply with Australian
@@ -414,8 +553,8 @@
                 all audiences including those with disabilities.
               </p>
             </div>
-            <div class="service-card">
-              <div class="service-icon"><i class="fas fa-signal"></i></div>
+            <div class="servic-card">
+              <div class="servic-icon"><i class="fas fa-signal"></i></div>
               <h3>Compatibility Testing</h3>
               <p>
                 Verify your application works correctly across multiple
@@ -454,13 +593,10 @@
           </div>
           <div id="about">
             <h3>About</h3>
-            <ul>
-              <li>Leading software testing company in Australia</li>
-              <li>liOffices in Sydney, Melbourne, and Brisbane</li>
-              <li>ISO 27001 certified</li>
-              <li>ISTQB certified professionals</li>
-              <li>Great Place to Work certified</li>
-            </ul>
+            <p>
+              VTEST is an independent software testing company catering to
+              product and services teams across the globe.
+            </p>
           </div>
           <div id="office">
             <h3>Our Office</h3>
@@ -469,77 +605,30 @@
             <div id="social">
               <h3>Social Links</h3>
               <div id="social-icons">
-                <a href="https://www.linkedin.com/company/vtestcorp/">
+                <a target="_blank" href="https://www.linkedin.com/company/vtest/">
                   <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="https://www.facebook.com/VTESTCorp">
+                <a target="_blank" href="https://x.com/vtestcorp">
                   <i class="fab fa-facebook"></i>
                 </a>
-                <a href="https://twitter.com/VTESTCorp">
+                <a target="_blank" href="https://www.facebook.com/vtestcorp/">
                   <i class="fab fa-twitter"></i>
                 </a>
-                <a href="https://www.instagram.com/vtestcorp/">
+                <a target="_blank" href="https://www.instagram.com/vtest_software/">
                   <i class="fab fa-instagram"></i>
                 </a>
+              </div>
             </div>
           </div>
         </div>
-       
-        </div>
         <div id="bottom">
-        <p>Privacy Policy | Terms of Service | © 2025 VTEST. All rights reserved.</p>
-      </div>
+          <p>| © 2025 VTEST. All rights reserved. |</p>
+        </div>
       </div>
 
 
     </div>
 
-    <script>
-      // Tab functionality
-      const tabs = document.querySelectorAll(".tab");
-      const serviceDescriptions = document.querySelectorAll(
-        ".service-description"
-      );
-
-      tabs.forEach((tab) => {
-        tab.addEventListener("click", () => {
-          const tabId = tab.getAttribute("data-tab");
-
-          // Remove active class from all tabs and descriptions
-          tabs.forEach((t) => t.classList.remove("active"));
-          serviceDescriptions.forEach((desc) =>
-            desc.classList.remove("active")
-          );
-
-          // Add active class to clicked tab and corresponding description
-          tab.classList.add("active");
-          document.getElementById(tabId).classList.add("active");
-        });
-      });
-
-      // Sticky header
-      window.addEventListener("scroll", () => {
-        const header = document.querySelector("header");
-        header.classList.toggle("scrolled", window.scrollY > 0);
-      });
-
-      // Smooth scrolling for anchor links
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-
-          const targetId = this.getAttribute("href");
-          if (targetId === "#") return;
-
-          const targetElement = document.querySelector(targetId);
-          if (targetElement) {
-            window.scrollTo({
-              top: targetElement.offsetTop - 80,
-              behavior: "smooth",
-            });
-          }
-        });
-      });
-    </script>
+    <script src="service.js"></script>
   </body>
 </html>
