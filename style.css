@@ -27,6 +27,7 @@ body {
   outline: none;
   border: 1px solid #e5590d;
   cursor: pointer;
+  font-family: 'Avenir';
 }
 
 .button:hover {
