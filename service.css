@@ -286,7 +286,7 @@ section {
 }
 
 .serv-content h4 {
-  margin: 1rem 0;
+  margin-top: 30px;
 }
 
 .service-card {
@@ -385,6 +385,7 @@ section {
   padding: 40px 130px;
   position: relative;
   overflow: hidden;
+  margin-top: 80px;
 }
 
 .stats-section::before {
@@ -471,7 +472,6 @@ section {
 }
 
 .servic-card h3 {
-  font-size: 1.5rem;
   margin-bottom: 1rem;
   color: #fff;
 }
@@ -479,6 +479,7 @@ section {
 .servic-card p {
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 1.5rem;
+  line-height: 140%;
 }
 
 .servic-icon {
@@ -489,7 +490,7 @@ section {
 
 .vtest-container {
   font-family: "Avenir";
-  margin: 0 auto;
+  margin-bottom: 80px;
   padding: 20px 150px;
   position: relative;
   overflow: hidden;
@@ -512,7 +513,7 @@ section {
   margin-bottom: 30px;
   color: #e5590d;
   letter-spacing: -1px;
-  line-height: 1.1;
+  line-height: 1.5;
   text-align: center;
   width: 60%;
 }
@@ -531,7 +532,8 @@ section {
   white-space: nowrap;
   position: relative;
   width: 90%;
-  margin: 100px auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 .scrolling-logos {
@@ -837,9 +839,13 @@ section {
   }
   .serv-content p {
     font-size: 16px;
+    margin-left: 15px;
   }
   .serv-content {
     margin-bottom: 3rem;
+  }
+  .serv-title {
+    margin-left: 15px;
   }
 
   /* next */

@@ -336,6 +336,11 @@ image img {
   line-height: 140% !important;
 }
 
+.address {
+  color: #e5590d;
+  font-size: 16px;
+}
+
 .br-16 {
   border-radius: 16px;
   display: none;
@@ -355,6 +360,110 @@ image img {
   border: 1px solid #111111;
   margin-top: 50px;
   padding: 40px 100px;
+}
+#four {
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  color: #fff;
+  font-family: "Avenir";
+  padding: 0px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#stories {
+  width: 80%;
+  height: 60%;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.testimonial-container {
+  width: 100%;
+  text-align: start;
+}
+
+.testimonial-content {
+  min-height: 250px;
+}
+
+#testimonial-content h1 {
+  font-size: 18px;
+  color: #fff;
+  margin: 20px 0;
+}
+
+#testimonial-content p {
+  font-size: 18px;
+  line-height: 140%;
+  color: #999999;
+}
+
+.testimonial-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.testimonial-nav button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.four-dots {
+  display: flex;
+  gap: 8px;
+  margin: 0 10px;
+}
+
+.four-dot {
+  width: 10px;
+  height: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+}
+
+.four-dot.active {
+  background: #f26522;
+  border-color: #f26522;
+}
+
+.footer-links li {
+  margin: 10px 0;
+  font-family: "Avenir";
+}
+
+.advantages-heading {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #e5590d;
+  background-clip: text;
+  text-align: center;
+}
+.advantages-tagline {
+  font-size: 18px;
+  color: #bbb;
+  position: relative;
+  display: inline-block;
+  padding: 0 30px;
+}
+
+#addr {
+  text-align: center;
+  font-size: 16px;
 }
 
 @media (max-width: 648px) {
@@ -426,8 +535,22 @@ image img {
   }
   #upper #img {
     width: 80%;
-}
-
-
-
+  }
+  .advantages-heading {
+    font-size: 32px;
+  }
+  .advantages-tagline {
+    font-size: 16px;
+    text-align: center;
+  }
+  #stories {
+    width: 85%;
+    height: 60%;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+  }
 }

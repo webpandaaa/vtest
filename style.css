@@ -21,7 +21,7 @@ body {
   padding: 15px 30px;
   border-radius: 5px;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 16px;
   transition: all 0.3s ease;
   border: 1px solid #fff;
   outline: none;
@@ -839,13 +839,8 @@ body {
   background-clip: text;
 }
 
-.advantages-tagline {
-  font-size: 18px;
-  color: #bbb;
-  position: relative;
-  display: inline-block;
-  padding: 0 30px;
-}
+
+
 
 .card-grid {
   display: grid;
@@ -993,7 +988,7 @@ body {
 .cta-text {
   color: #ddd;
   font-size: 1.1rem;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 }
 
 .cta-highlight {
@@ -1070,7 +1065,7 @@ body {
   margin-bottom: 30px;
   color: #e5590d;
   letter-spacing: -1px;
-  line-height: 1.1;
+  line-height: 1.5;
   text-align: center;
   width: 70%;
 }
