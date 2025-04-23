@@ -15,17 +15,66 @@ body {
   src: url(./AvenirLTStd-Book.otf);
 }
 
-.button {
+.blr {
+  filter: blur(55px) saturate(10);
+}
+
+#blrone {
+  position: fixed;
+  right: 5%;
+  bottom: 10%;
+  width: 130px;
+  height: 150px;
+  opacity: 0.4;
+  background-color: #ea945bbd;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+#blrtwo {
+  position: fixed;
+  left: 5%;
+  bottom: 60%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  opacity: 0.4;
+  -webkit-filter: blur(35px) saturate(10);
+  filter: blur(55px) saturate(10);
+  background-color: #e7a350;
+  z-index: 1;
+}
+
+#button{
   background-color: transparent;
-  color: white;
+  color: #FFFFFF;
   padding: 15px 30px;
   border-radius: 5px;
   text-decoration: none;
   font-size: 16px;
   transition: all 0.3s ease;
-  border: 1px solid #fff;
+  border: 1px solid #FFFFFF;
   outline: none;
-  border: 1px solid #e5590d;
+  cursor: pointer;
+  font-family: 'Avenir';
+}
+
+#button:hover {
+  background-color: #e5590d;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.button {
+  background-color: transparent;
+  color: #000000;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  border: 1px solid #000000;
+  outline: none;
   cursor: pointer;
   font-family: 'Avenir';
 }
@@ -38,15 +87,14 @@ body {
 
 .button-round {
   background-color: transparent;
-  color: white;
+  color: #000000;
   padding: 15px 30px;
   border-radius: 50px;
   text-decoration: none;
   font-size: 15px;
   transition: all 0.3s ease;
-  border: 1px solid #fff;
+  border: 1px solid #000000;
   outline: none;
-  border: 1px solid #e5590d;
   cursor: pointer;
   text-align: center;
   font-family: "Avenir";
@@ -61,7 +109,7 @@ body {
 #main {
   width: 100%;
   overflow: hidden;
-  background-color: #020202;
+  background-color: #FFFFFF ;
 }
 
 #hero {
@@ -97,14 +145,15 @@ body {
 
 #hero #navbar #links a {
   text-decoration: none;
-  color: white;
+  color: #fff;
   font-size: 17px;
   padding-bottom: 5px;
   transition: all 0.3s ease;
+  font-weight: 700;
 }
 
 #hero #navbar #links a:hover {
-  border-bottom: 1px solid #e5590d;
+  /* border-bottom: 2px solid #e5590d; */
   color: #e5590d;
 }
 
@@ -112,7 +161,7 @@ body {
 #hero #navbar #menu-button {
   display: none;
   font-size: 28px;
-  color: white;
+  color: #FFFFFF;
   cursor: pointer;
 }
 
@@ -123,7 +172,7 @@ body {
   right: -260px;
   width: 250px;
   height: 100vh;
-  background-color: #111;
+  background-color: #FFFFFF;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -133,7 +182,7 @@ body {
 }
 
 #mobile-menu a {
-  color: white;
+  color: #000000;
   text-decoration: none;
   font-size: 18px;
   border-bottom: 1px solid #333;
@@ -202,10 +251,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #000000;
+  background-color: #FFFFFF ;
   padding: 0 100px;
   font-family: "Avenir";
-  background-image: url("https://vtestcorp.com/wp-content/themes/VTESTP6/assets/images/Group%201.svg");
+  /* background-image: url("https://vtestcorp.com/wp-content/themes/VTESTP6/assets/images/Group%201.svg"); */
   background-position: center;
 }
 
@@ -243,6 +292,11 @@ body {
   justify-content: center;
 }
 
+#second #second-img img{
+  width: 90%;
+
+}
+
 .services-container {
   margin: 0 auto;
   padding: 50px 150px;
@@ -278,7 +332,7 @@ body {
 }
 
 .service-card {
-  background: linear-gradient(145deg, #111111, #1a1a1a);
+  background: linear-gradient(145deg, #f7e6dc97, #fce5d9ef);
   border-radius: 16px;
   padding: 40px 30px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -296,7 +350,7 @@ body {
 }
 
 .service-card:hover .feature-item {
-  color: #aaa;
+  color: #111;
 }
 
 .service-card::before {
@@ -318,11 +372,11 @@ body {
 .service-title {
   font-weight: 600;
   margin-bottom: 20px;
-  color: #fff;
+  color: #000000;
 }
 
 .service-description {
-  color: #bbb;
+  color: #707070;
   margin-bottom: 25px;
   flex-grow: 1;
   line-height: 140%;
@@ -337,7 +391,7 @@ body {
   align-items: center;
   margin-bottom: 12px;
   transition: all 0.3s ease;
-  color: #bbb;
+  color: #707070;
 }
 
 .feature-icon {
@@ -395,7 +449,7 @@ body {
   line-height: 140%;
   max-width: 700px;
   margin: 0 auto;
-  color: #aaa;
+  color: #707070;
 }
 
 .visual-column {
@@ -499,7 +553,7 @@ body {
 }
 
 .bug-feature-icon {
-  background: linear-gradient(145deg, #111111, #1a1a1a);
+  background: linear-gradient(145deg, #f0efef, #c6c6c6);
   min-width: 50px;
   height: 50px;
   border-radius: 12px;
@@ -530,13 +584,13 @@ body {
 }
 
 .feature-content h4 {
-  color: #fff;
+  color: #000000;
   font-size: 1.2rem;
   margin-bottom: 8px;
 }
 
 .feature-content p {
-  color: #aaa;
+  color: #707070;
   font-size: 0.95rem;
 }
 
@@ -621,21 +675,6 @@ body {
   font-size: 1.1rem;
   color: #ccc;
   margin-top: 30px;
-}
-
-.australia-map-overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  opacity: 0.03;
-  background-image: url("/api/placeholder/800/600");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  z-index: 1;
 }
 
 .services-hexgrid {
@@ -850,7 +889,7 @@ body {
 }
 
 .advantage-card {
-  background: linear-gradient(145deg, #111111, #1a1a1a);
+  background: linear-gradient(145deg, #f7e6dc97, #fce5d9ef);
   border-radius: 16px;
   padding: 40px 30px;
   transition: all 0.4s ease;
@@ -898,6 +937,11 @@ body {
   line-height: 1;
 }
 
+.advantages-tagline{
+  font-size: 18px;
+  color: #707070;
+}
+
 .advantage-icon {
   width: 60px;
   height: 60px;
@@ -926,14 +970,14 @@ body {
 }
 
 .advantage-title {
-  color: #fff;
+  color: #000000;
   margin-bottom: 15px;
   position: relative;
   z-index: 1;
 }
 
 .advantage-desc {
-  color: #bbb;
+  color: #707070;
   line-height: 140%;
   position: relative;
   z-index: 1;
@@ -962,16 +1006,6 @@ body {
   background: rgba(255, 107, 0, 0.02);
 }
 
-.australia-dots {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  opacity: 0.03;
-  z-index: 1;
-}
 
 .dot {
   position: absolute;
@@ -987,7 +1021,7 @@ body {
 }
 
 .cta-text {
-  color: #ddd;
+  color: #707070;
   font-size: 1.1rem;
   margin-bottom: 40px;
 }
@@ -1085,6 +1119,7 @@ body {
   position: relative;
   width: 90%;
   margin: 100px auto;
+  scroll-behavior: smooth;
 }
 
 .scrolling-logos {
@@ -1100,6 +1135,10 @@ body {
   vertical-align: middle;
 }
 
+.company-info .scrolling-logos img {
+  filter: brightness(0) saturate(100%);
+}
+
 @keyframes scroll-left {
   0% {
     transform: translateX(0%);
@@ -1112,8 +1151,8 @@ body {
 #four {
   width: 100%;
   height: 100vh;
-  background: #000;
-  color: #fff;
+  /* background: #000; */
+  color: #000000;
   font-family: "Avenir";
   padding: 0px 100px;
   display: flex;
@@ -1143,7 +1182,7 @@ body {
 
 #testimonial-content h1 {
   font-size: 18px;
-  color: #fff;
+  color: #000000;
   margin: 20px 0;
 }
 
@@ -1163,7 +1202,7 @@ body {
 .testimonial-nav button {
   background: none;
   border: none;
-  color: white;
+  color: #000000;
   font-size: 24px;
   cursor: pointer;
 }
@@ -1177,7 +1216,7 @@ body {
 .four-dot {
   width: 10px;
   height: 10px;
-  border: 2px solid white;
+  border: 2px solid #000000;
   border-radius: 50%;
   background: transparent;
   cursor: pointer;
@@ -1200,7 +1239,7 @@ body {
 }
 
 #upper {
-  background-color: #111111;
+  background: linear-gradient(145deg, #f7e6dc97, #fce5d9ef);
   width: 100%;
   height: 80%;
   padding: 40px 150px;
@@ -1217,14 +1256,14 @@ body {
 
 #upper h3 {
   font-size: 20px;
-  color: #fff;
+  color: #000000;
   margin-bottom: 20px;
 }
 
 #upper #about p {
   line-height: 140%;
   list-style: none;
-  color: #999999;
+  color: #707070;
   margin: 10px 0;
 }
 
@@ -1248,9 +1287,15 @@ body {
 
 #upper #office #social #social-icons a {
   text-decoration: none;
-  color: #999999;
+  color: #707070;
   font-size: 20px;
   margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+#upper #office #social #social-icons a:hover {
+  color: #000000;
+
 }
 
 #footer #bottom {
@@ -1297,11 +1342,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #000000;
+    background-color: #FFFFFF;
     padding: 20px;
-    font-family: "Avenir";
-    background-image: url(https://vtestcorp.com/wp-content/themes/VTESTP6/assets/images/Group%201.svg);
-    background-position: center;
   }
 
   #second #second-text {
