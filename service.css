@@ -969,6 +969,9 @@ section {
     flex-direction: column;
     gap: 10px;
   }
+  #upper #img {
+    width: 65%;
+}
   #upper #about {
     width: 100%;
   }
