@@ -1344,6 +1344,7 @@ body {
     justify-content: center;
     background-color: #FFFFFF;
     padding: 20px;
+    margin: 50px 0;
   }
 
   #second #second-text {
@@ -1388,7 +1389,7 @@ body {
   }
 
   .container {
-    margin-top: 100px;
+    margin-top: 50px;
     padding: 20px;
     position: relative;
     z-index: 2;
@@ -1397,6 +1398,11 @@ body {
     flex-direction: column;
     gap: 40px;
   }
+
+  .cta-container {
+    text-align: center;
+    margin-top: 15px;
+}
 
   .visual-column {
     display: none;

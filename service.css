@@ -917,6 +917,17 @@ section {
   .vtest-container {
     padding: 0px;
   }
+  #forset{
+    margin-top: 80px;
+  }
+.subheading {
+  font-size: 18px;
+  color: #707070;
+  line-height: 140%;
+  max-width: 800px;
+  margin-bottom: 60px;
+  text-align: center;
+}
   .content {
     margin-top: 10px;
   }

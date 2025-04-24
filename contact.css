@@ -413,9 +413,21 @@ image img {
 
 .address {
   color: #e5590d;
-  font-size: 16px;
 }
-
+.form-control textarea, .resume-upload {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 6px 12px;
+  height: 39px;
+  border: 1px solid rgba(227, 46, 46, 0.2);
+  background: linear-gradient(145deg, #f7e6dc97, #fce5d9ef);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: rgba(52, 50, 50, 0.849);
+  font-family: "Avenir";
+}
 .br-16 {
   border-radius: 16px;
   display: none;
@@ -573,6 +585,18 @@ image img {
     font-weight: 700;
     text-align: center;
   }
+  .lets-talk h4{
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 100%;
+  }
+  #addr {
+    text-align: start;
+    font-size: 16px;
+    color: #707070;
+    margin-left: 42px;
+}
   .container {
     width: 100%;
     padding: 0 20px;
