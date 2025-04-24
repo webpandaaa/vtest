@@ -1252,7 +1252,7 @@ body {
 }
 
 #upper #img img {
-  width: 70%;
+  width: 60%;
   object-fit: cover;
 }
 
@@ -1509,6 +1509,10 @@ body {
   #upper #img {
     width: 70%;
   }
+  #upper #img img {
+    width: 55%;
+    object-fit: cover;
+}
   #upper #about {
     width: 100%;
   }

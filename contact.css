@@ -56,7 +56,7 @@ body {
   justify-content: space-between;
   padding: 20px 100px;
   z-index: 99;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 #navbar #logo img {
@@ -99,7 +99,7 @@ body {
   right: -260px;
   width: 250px;
   height: 100vh;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -142,7 +142,7 @@ body {
   width: 100%;
   height: 80vh;
   display: flex;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 0 100px;
 }
 
@@ -182,7 +182,7 @@ body {
   width: 70%;
 }
 
-.lets-talk{
+.lets-talk {
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -203,31 +203,34 @@ body {
   margin-bottom: 20px;
 }
 
-
-.contact-form{
-  background-color: #FFFFFF;
+.contact-form {
+  background-color: #ffffff;
   color: #000000;
 }
 
-.form-control input, .form-control select, .form-control textarea, .resume-upload {
+.form-control input,
+.form-control select,
+.form-control textarea,
+.resume-upload {
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
   padding: 6px 12px;
   height: 39px;
   border: 1px solid rgba(227, 46, 46, 0.2);
-  background: linear-gradient(145deg, #f7e6dc97, #fce5d9ef);  
+  background: linear-gradient(145deg, #f7e6dc97, #fce5d9ef);
   color: #fff;
 }
 
-.form-control label, .form-control input, .form-control select {
+.form-control label,
+.form-control input,
+.form-control select {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
   color: rgba(52, 50, 50, 0.849);
   text-align: left;
 }
-
 
 .serviceHeading {
   font-size: 40px;
@@ -240,7 +243,6 @@ body {
 image img {
   max-height: 350px;
 }
-
 
 #stories {
   width: 100%;
@@ -317,12 +319,12 @@ image img {
   width: 100%;
   height: 55vh;
   font-family: "Avenir";
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 #upper {
   /* background: linear-gradient(145deg, #ffd6bebd, #fce5d9ef);   */
-  background-color: #FBEBE2;
+  background-color: #fbebe2;
   width: 100%;
   height: 80%;
   padding: 40px 150px;
@@ -391,7 +393,7 @@ image img {
   align-items: center;
   width: 100%;
   height: 20%;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 #footer #bottom p {
@@ -415,7 +417,8 @@ image img {
 .address {
   color: #e5590d;
 }
-.form-control textarea, .resume-upload {
+.form-control textarea,
+.resume-upload {
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
@@ -453,7 +456,7 @@ image img {
 #four {
   width: 100%;
   height: 100vh;
-  background: #FFFFFF;
+  background: #ffffff;
   color: #000000;
   font-family: "Avenir";
   padding: 0px 100px;
@@ -551,7 +554,7 @@ image img {
   padding: 0 30px;
 }
 
-.contact-form{
+.contact-form {
   z-index: 99;
 }
 
@@ -559,6 +562,11 @@ image img {
   text-align: start;
   font-size: 16px;
   color: #707070;
+}
+
+#upper #img img {
+  width: 60%;
+  object-fit: cover;
 }
 
 @media (max-width: 648px) {
@@ -590,7 +598,7 @@ image img {
     font-weight: 700;
     text-align: center;
   }
-  .lets-talk h4{
+  .lets-talk h4 {
     font-size: 32px;
     font-weight: 700;
     text-align: center;
@@ -601,7 +609,7 @@ image img {
     font-size: 16px;
     color: #707070;
     margin-left: 42px;
-}
+  }
   .container {
     width: 100%;
     padding: 0 20px;
@@ -644,9 +652,9 @@ image img {
     width: 80%;
   }
   #upper #img img {
-    width: 65%;
+    width: 50%;
     object-fit: cover;
-}
+  }
   .advantages-heading {
     font-size: 32px;
   }

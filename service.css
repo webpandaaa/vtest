@@ -769,9 +769,10 @@ section {
 }
 
 #upper #img img {
-  width: 70%;
+  width: 60%;
   object-fit: cover;
 }
+
 #upper #about {
   width: 30%;
 }
@@ -970,8 +971,12 @@ section {
     gap: 10px;
   }
   #upper #img {
-    width: 65%;
-}
+    width: 80%;
+  }
+  #upper #img img {
+    width: 50%;
+    object-fit: cover;
+  }
   #upper #about {
     width: 100%;
   }
