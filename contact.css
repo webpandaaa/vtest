@@ -643,6 +643,10 @@ image img {
   #upper #img {
     width: 80%;
   }
+  #upper #img img {
+    width: 65%;
+    object-fit: cover;
+}
   .advantages-heading {
     font-size: 32px;
   }
