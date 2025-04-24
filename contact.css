@@ -24,7 +24,7 @@ body {
   height: 150px;
   opacity: 0.4;
   background-color: #ea945bbd;
-  z-index: 1;
+  z-index: 0;
   border-radius: 50%;
 }
 
@@ -39,7 +39,7 @@ body {
   -webkit-filter: blur(35px) saturate(10);
   filter: blur(55px) saturate(10);
   background-color: #e7a350;
-  z-index: 1;
+  z-index: 0;
 }
 
 .blr {
@@ -80,7 +80,7 @@ body {
 }
 
 #navbar #links a:hover {
-  border-bottom: 1px solid #e5590d;
+  /* border-bottom: 1px solid #e5590d; */
   color: #e5590d;
 }
 
@@ -335,7 +335,8 @@ image img {
 }
 
 #upper #img img {
-  width: 60%;
+  width: 70%;
+  object-fit: cover;
 }
 #upper #about {
   width: 30%;
@@ -548,6 +549,10 @@ image img {
   position: relative;
   display: inline-block;
   padding: 0 30px;
+}
+
+.contact-form{
+  z-index: 99;
 }
 
 #addr {

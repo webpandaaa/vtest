@@ -50,26 +50,26 @@ function tab() {
 
 tab();
 
-const countNumbers = document.querySelectorAll(".stat-number");
-const speed = 5;
+// const countNumbers = document.querySelectorAll(".stat-number");
+// const speed = 5;
 
-countNumbers.forEach((count) => {
-  const updateNumber = () => {
-    const targetNumber = parseInt(count.dataset.number);
-    // console.log(targetNumber);
-    const initialNumber = parseInt(count.innerText);
-    // console.log(initialNumber);
-    const increment = Math.trunc(targetNumber / speed);
-    // console.log(increment);
+// countNumbers.forEach((count) => {
+//   const updateNumber = () => {
+//     const targetNumber = parseInt(count.dataset.number);
+//     // console.log(targetNumber);
+//     const initialNumber = parseInt(count.innerText);
+//     // console.log(initialNumber);
+//     const increment = Math.trunc(targetNumber / speed);
+//     // console.log(increment);
 
-    if (initialNumber < targetNumber) {
-      count.innerText = `${initialNumber + increment}+`;
-      setTimeout(updateNumber, 50);
-    }
-  };
+//     if (initialNumber < targetNumber) {
+//       count.innerText = `${initialNumber + increment}+`;
+//       setTimeout(updateNumber, 50);
+//     }
+//   };
 
-  updateNumber();
-});
+//   updateNumber();
+// });
 
 const stats = document.querySelector(".stats-container");
 const statsObserver = new IntersectionObserver(
@@ -89,7 +89,7 @@ const statsObserver = new IntersectionObserver(
         const increment = Math.trunc(targetNumber / speed);
 
         if (initialNumber < targetNumber) {
-          count.innerText = `${initialNumber + increment}+`;
+          count.innerText = `${initialNumber + increment}`;
           setTimeout(updateNumber, 50);
         }
       };

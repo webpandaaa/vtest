@@ -104,7 +104,7 @@ body {
 }
 
 #navbar #links a:hover {
-  border-bottom: 1px solid #e5590d;
+  /* border-bottom: 1px solid #e5590d; */
   color: #e5590d;
 }
 
@@ -422,6 +422,14 @@ section {
   position: relative;
   overflow: hidden;
   margin-top: 80px;
+}
+
+.formerge{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
 }
 
 .stats-section::before {
@@ -758,6 +766,11 @@ section {
 
 #upper #img {
   width: 20%;
+}
+
+#upper #img img {
+  width: 70%;
+  object-fit: cover;
 }
 #upper #about {
   width: 30%;

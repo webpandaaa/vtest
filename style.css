@@ -1250,6 +1250,12 @@ body {
 #upper #img {
   width: 20%;
 }
+
+#upper #img img {
+  width: 70%;
+  object-fit: cover;
+}
+
 #upper #about {
   width: 30%;
 }
