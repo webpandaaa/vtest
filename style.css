@@ -1482,6 +1482,7 @@ body {
     margin: 70px auto;
   }
 
+
   /* stories page */
   #four {
     padding: 0px;
@@ -1504,6 +1505,9 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+  }
+  #upper #img {
+    width: 70%;
   }
   #upper #about {
     width: 100%;
