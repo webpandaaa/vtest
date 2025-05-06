@@ -48,10 +48,11 @@ app.post("/send-email", async (req, res) => {
       to: user_email,
       subject: "Thank you for contacting us!",
       html: `
-          <h3>Hi ${user_name},</h3>
+          <p>Hi ${user_name},</p>
           <p>Thank you for reaching out to us! I’ll be with you shortly, but to kick us off for now, here are some things to consider:</p>
           <ol>
             <li><a href="https://vtest.com.au/"><strong>VTEST</strong></a> is an agile, boutique firm that focuses on a couple of projects each quarter since we pride ourselves on quality, not quantity. The first step in our process is to review your software testing requirements by jumping on a quick exploratory call. Our engagement motto is simple - <strong>YOU develop, WE test</strong>.</li>
+            <br/>
             <li>Please feel free to check out our <a href="https://vtestcorp.com/wp-content/uploads/2025/04/VTEST-Global-Software-Testing-Partner-.pdf">VTEST - Global Software Testing Partner deck</a></li>
           </ol>
           <p>Please feel free to let me know when is a good time for you to chat, or grab a time on <a href="https://cal.com/shak.vtest">VTEST Sales Calendar</a>.</p>
